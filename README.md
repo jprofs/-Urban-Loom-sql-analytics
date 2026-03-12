@@ -155,7 +155,7 @@ All SQL used in this project can be found in:
 
 The original project brief can be viewed here:
 
-[Project Brief](project-brief.pdf)
+![Project Brief](Project Brief-Urban-Loom.pdf)
 
 ---
 

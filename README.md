@@ -57,7 +57,7 @@ The model also includes a **legend and colour-coding system** to make relationsh
 
 ### Logical Data Model Diagram
 
-![Logical Data Model](assets/logical-data-model.png)
+![Logical Data Model](assets/Logical Data Model Diagram.png)
 
 A detailed explanation of table relationships and schema design accompanies the model.
 
@@ -96,6 +96,8 @@ Key metrics analysed included:
 
 The query identifies the most effective channels and highlights areas where marketing investment may be optimised.
 
+![Marketing Insight](assets/Insight 1 Kojo.png)
+
 ---
 
 ### 2. Product – Lead: Jared
@@ -110,6 +112,8 @@ The analysis explores:
 * Behaviour trends across user segments
 
 This insight helps guide **product development and feature prioritisation.**
+
+![Product Insight](assets/Insight 2 Jared .png)
 
 ---
 
@@ -126,13 +130,9 @@ Key metrics examined include:
 
 These insights help the operations team understand workflow efficiency and potential bottlenecks.
 
+![Operations Insight](assets/Insight 3  Ameena.png)
+
 ---
-
-## Example Query Output
-
-Example SQL query executed in BigQuery:
-
-![BigQuery Query Example](assets/marketing-query.png)
 
 All SQL used in this project can be found in:
 

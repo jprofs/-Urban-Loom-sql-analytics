@@ -29,13 +29,15 @@ urbanloom-project/
 │
 ├── README.md
 ├── project-brief.pdf
+├── UL-csv's datasets
 ├── urbanloom_queries.sql
 │
 └── assets/
     ├── logical-data-model.png
     ├── marketing-query.png
     ├── product-query.png
-    └── operations-query.png
+    ├── operations-query.png
+    └── logical-data-diagram-dictionary
 ```
 
 ---

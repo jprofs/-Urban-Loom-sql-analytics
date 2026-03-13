@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was completed as part of a data analytics exercise focused on understanding and analysing the **Urban News database** used by UrbanLoom.
+This project was completed as part of a data analytics exercise focused on understanding and analysing the **Urban Loom database** used by UrbanLoom.
 
 The objective of the project was twofold:
 

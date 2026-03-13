@@ -112,6 +112,7 @@ LIMIT 10;
 --Insight summary: Certain apparel items have disproportionately high return rates. This may indicate sizing issues, product quality concerns, or customer expectations misalignment. Urban Loom will need to investigate these products to reduce returns.
 
 ---------------------------------------------------
+
 ## Insight 3: Geographic Delivery Performance (for Ameena) Tables used: order_transactions , customers
 
 -- Step 1: CTE for delivery duration by customer region

@@ -1,0 +1,70 @@
+
+
+Primary & Foreign Keys Key Structure Explained:
+
+Primary Key (PK): A unique identifier for each record in a table.
+Foreign Key (FK): A column in one table that references the PK in another table, enforcing relationships.
+One-to-Many (1:M): One record in Table A relates to many records in Table B.
+One-to-One (1:1): One record in Table A relates to exactly one record in Table B.
+Self-Referencing (1:M self): A table references itself through its own PK.
+
+-----
+
+Table-by-Table Overview
+
+customers
+PK: customer_id
+Relationships:
+order_transactions.customer_id is an FK referencing customers.customer_id (1 customer → many orders).
+
+-------------
+
+order_transactions
+
+
+PK: order_transaction_id
+FKs:
+customer_id → customers.customer_id
+original_sale_transaction_id → order_transactions.order_transaction_id (self-reference)
+Relationships:
+1 customer → many orders
+1 order → many order_line_items (order_line_items.order_transaction_id)
+1 order → 1 marketing record (order_marketing_details.order_transaction_id)
+1 original sale → many return transactions (self-reference)
+
+--------------------
+order_line_items
+
+
+PK: transaction_line_item_id
+FKs:
+order_transaction_id → order_transactions.order_transaction_id
+product_id → products.product_id
+Relationships:
+1 order → many line items
+1 product → many line items
+
+--------------------
+products
+
+PK: product_id
+Relationships:
+order_line_items.product_id is an FK referencing products.product_id (1 product can appear in many orders).
+
+--------------------
+order_marketing_detail
+
+PK: row_id
+FK: transaction_id → order_transactions.order_id
+Relationships:
+1 order → 1 marketing record
+
+-------
+
+Summary of Relationships:
+
+customers → order_transactions (1:M)
+order_transactions → order_line_items (1:M)
+products → order_line_items (1:M)
+order_transactions → order_marketing_details (1:1)
+order_transactions → order_transactions (1:M self-reference)
